@@ -10,6 +10,6 @@ There are 4 main files in this repository for solving the following two cases:
  
 2. U(1) wormholes within the axion-dilaton system in String Theory
   - **dilaton.m:** similar to the u1.m file this contains the implementation for the axion-dilaton system
-  - **run-dilaton.m:** this runs the functions in dilaton.m and plots the results for the dilaton, radial field and metric function
+  - **run-dilaton.nb:** this runs the functions in dilaton.m and plots the results for the dilaton, radial field and metric function
 
 
