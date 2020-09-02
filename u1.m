@@ -28,7 +28,7 @@ GeV = 1; (* Set up units *)
 Mp = 1.220890 10^19 GeV; (* Define Planck constant *)
 n = 1; (* Set value of global charge *)
 
-(* Apply the initial conditions A(0), F(0) *)
+(* Apply the initial conditions A(0), F(0) in Eq. (16) *)
 BoundaryCondition[F0_, A0_, Fa_, Q_] := F0^2 A0^4 - (1/4 F0^2 A0^6 (F0^2 - Fa^2)^2 + Q);
 
 (* For a given guess of F(0), compute the corresponding value of A(0) that satisfies the boundary conditions *)
@@ -40,7 +40,7 @@ sol = NSolve[BoundaryCondition[F0, A0, $Fa, $Q] == 0 && A0 < $Min && A0 > 0 , {A
 A0 /. sol[[1]]
 );
 
-(* Solve for the differential equation evolution for a given F(0), A(0), P(0), \[Lambda], Subscript[f, a] *)
+(* Solve for the differential equation evolution for a given F(0), A(0), P(0), \[Lambda], Subscript[f, a] [Eqs. (14) - (16) of companion paper] *)
 EvolutionSolver[F0_, A0_, \[Lambda]_, fa_] :=(
 $Fa = fa \[Sqrt]((8\[Pi])/(3 Mp^2));
 $Q = (n^2 \[Lambda]^2)/(8\[Pi]^4);
