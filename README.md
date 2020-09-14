@@ -1,6 +1,6 @@
 # Wormhole Finder
 
-A repository for computing U(1) Euclidean wormhole solutions for axion fields coupled to gravity. The calculations are related to the companion paper arxiv:2009.xxxx (The Axion Quality Problem: Global Symmetry Breaking and Wormholes).
+A repository for computing U(1) Euclidean wormhole solutions for axion fields coupled to gravity. The calculations are related to the companion paper [2009.03917](https://arxiv.org/abs/2009.03917) (The Axion Quality Problem: Global Symmetry Breaking and Wormholes).
 
 There are 4 main files in this repository for solving the following two cases:
 
